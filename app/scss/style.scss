@@ -3,6 +3,9 @@
 @import 'fonts';
 
 
+// header
+
+
 .header {
   background-color: $bg;
   &__top {
@@ -47,7 +50,6 @@
   }
   &__price {
     font-size: 15px;
-    font-weight: 400;
     color: $button;
   }
   &__bottom {
@@ -85,7 +87,6 @@
       color: #898f96;
       font-size: 15px;
       line-height: 30px;
-      font-weight: 400;
     }
   }
   &__submit {
@@ -99,7 +100,130 @@
     right: 0;
     top: 0;
   }
+  &__header {
+    background-color: #fff;
+  }
 }
+
+// product
+
+
+.product {
+  background-color: #2a4dd0;
+  position: relative;
+  &__box {
+    text-align: center;
+    color: #fff;
+    font-size: 60px; 
+    line-height: 70px;
+    padding: 185px 0 175px;
+    height: 100%;
+  }
+  &__title {
+    font-weight: 700;
+  }
+  &__inner {
+    font-size: 20px;
+    line-height: 72px;
+  }
+  &__link {
+    font-size: 16px;
+    width: 190px;
+    height: 50px;
+    border-radius: 33px;
+    padding: 20px 30px;
+    &--bg-white {
+      background-color: #fff;
+      color: $button;
+      margin-right: 28px;
+    }
+    &--bg-blue {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+  &__block {
+    width: 1160px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    bottom: -66px;
+    z-index: 5;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      opacity: 2;
+      width: 1100px;
+      height: 135px;
+      z-index: -3;
+      opacity: 0.502;
+      top: -25px;
+      border-radius: 10px;
+      right: 30px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      opacity: 2;
+      width: 1130px;
+      height: 135px;
+      z-index: -4;
+      opacity: 0.502;
+      top: -12px;
+      border-radius: 10px;
+      right: 15px;
+    }
+   
+  }
+  &__form {
+    display: flex;
+    padding: 40px;
+    font-size: 16px;
+  }
+  &__search {
+    width: 610px;
+    border: 1px solid $border;
+    height: 55px;
+    padding-left: 28px;
+  }
+  &__menu {
+    border: 1px solid $border;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px 70px 20px 20px;
+    height: 55px;
+    margin-right: 58px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 8px;
+      background-image: url(../images/arrow.png);
+      right: 20px;
+    }
+  }
+  &__nav {
+    color: #555555;
+  }
+  &__submit {
+    padding: 18px 67px;
+    background-color: $button;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
 
 
 
