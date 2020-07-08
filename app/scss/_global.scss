@@ -37,6 +37,8 @@ a {
   padding: 43px 30px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  border-radius: 6px;
 }
 .general__title {
   font-size: 30px;
@@ -89,6 +91,9 @@ a {
 
 .general__wordpress {
   position: relative;
+  color: $arrow;
+  padding-left: 23px;
+  margin-left: 20px;
   &::before {
     content: '';
     position: absolute;
@@ -102,15 +107,44 @@ a {
   }
 }
 
-.general--color {
-  color: #000;
-}
-
-.general--size {
-  
+.general__psd {
+  position: relative;
   color: $arrow;
   padding-left: 23px;
   margin-left: 20px;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/psd.svg);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 15px;
+    height: 15px;
+    left: 0;
+  }
+}
+
+.general__html {
+  position: relative;
+  color: $arrow;
+  padding-left: 23px;
+  margin-left: 20px;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/html.svg);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 15px;
+    height: 15px;
+    left: 0;
+  }
+}
+
+.general--color {
+  color: #000;
 }
 
 .general__text {
@@ -126,6 +160,8 @@ a {
   display: inline-block;
   color: $btntext;
   margin-right: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .general__heart {
@@ -149,10 +185,11 @@ a {
   position: relative;
   padding-left: 25px;
   display: inline-block;
+  color: $button;
   &::before {
     content: '';
     position: absolute;
-    background-image: url(../images/basket.png);
+    background-image: url(../images/basket-blue.png);
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,4 +218,43 @@ a {
     width: 15px;
     height: 14px;
   }
+}
+
+.general-green {
+  width: 360px;
+  height: 230px;
+  background-color: $green;
+}
+
+.general-blue {
+  width: 360px;
+  height: 230px;
+  background-color: $blue;
+}
+
+.general--small {
+ max-width: 360px;
+}
+
+.general__inner {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.general__price{
+  padding: 7px 18px;
+  background-color: $price;
+  display: inline-block;
+  border-radius: 16px;
+}
+
+.general__button {
+  padding: 20px 30px;
+  background-color: $button;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  border-radius: 26px;
+  margin: 58px auto 0;
+  max-width: 185px;
 }

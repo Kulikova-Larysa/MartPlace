@@ -47,6 +47,7 @@
     font-size: 16px;  
     font-weight: 500;
     color: $text;
+    cursor: pointer;
   }
   &__price {
     font-size: 15px;
@@ -100,6 +101,7 @@
     border-radius: 22px;
     right: 0;
     top: 0;
+    cursor: pointer;
   }
   &__header {
     background-color: #fff;
@@ -133,6 +135,7 @@
     height: 50px;
     border-radius: 33px;
     padding: 20px 30px;
+    cursor: pointer;
     &--bg-white {
       background-color: #fff;
       color: $button;
@@ -223,6 +226,7 @@
     background-color: $button;
     font-size: 16px;
     color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -230,7 +234,7 @@
 // act
 
 .act {
-  margin-top: 180px;
+  margin: 180px 0 120px; 
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -309,11 +313,16 @@
     width: 555px;
     height: 450px;
     background-color: #4e5760;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
   }
   &__inner {
     width: 585px;
     background-color: #fff;
     padding: 50px 50px 25px 50px;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
   }
   &__page {
     font-size: 24px;
@@ -359,10 +368,105 @@
   }
 }
 
+// shop
 
 
-
-
+.shop {
+  background-color: $bgshop;
+  padding: 120px 0 120px;
+  &__menu {
+    display: flex;
+    span {
+      font-size: 16px;
+      color: $color;
+      margin-right: 25px;
+      align-items: center;
+      display: flex;
+    }
+  }
+  &__point {
+    position: relative;
+    transition: all .5s;
+    &-gray {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $color;
+      margin-top: 4px;
+    }
+    &:hover {
+      .shop__list {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        width: 200px;
+        transition: all .5s;
+        right: -10px;
+        z-index: 1;
+        padding: 20px;
+        
+        &-menu {
+          margin-top: 10px;
+          color: $info;
+        }
+      }
+    }
+  }
+  &__list {
+    display: none;
+  }
+  &__box {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-top: 30px;
+  }
+  &__button {
+    background-color: #fff;
+    padding: 30px 113px 30px 30px;
+    margin-top: 30px;
+    box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+    border-radius: 6px;
+  }
+  &__info {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__text {
+    margin-top: 30px;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $line;
+    margin-top: 34px;
+    &-block {
+      margin-top: 15px;
+    }
+  }
+  &__heart {
+    margin-left: 12px;
+  }
+  &__basket {
+    margin-top: 15px;
+  }
+  &__button-gray:hover,
+  &__active {
+      background-color: $button;
+      color: #fff;
+  }
+}
 
 
 
