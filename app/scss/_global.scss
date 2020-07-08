@@ -1,3 +1,5 @@
+@import '_vars';
+
 html {
   box-sizing: border-box;
 }
@@ -11,6 +13,8 @@ html {
 body {
   font-family: 'Quicksand-Regular', sans-serif;
   font-weight: 400;
+  font-size: 15px;
+  
 }
 
 .container {
@@ -26,4 +30,155 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.general__box {
+  background-color: #fff;
+  padding: 43px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.general__title {
+  font-size: 30px;
+}
+
+.general__bg {
+  width: 110px;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow-left.png);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 8px;
+    height: 14px;
+    left: 20px;
+    top: 12px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow-right.png);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 8px;
+    height: 14px;
+    right: 20px;
+    top: 12px;
+  }
+}
+
+.general__block {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.general__foto {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $arrow;
+  margin-right: 10px;
+}
+
+.general__wordpress {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/wordpress.svg);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 15px;
+    height: 15px;
+    left: 0;
+  }
+}
+
+.general--color {
+  color: #000;
+}
+
+.general--size {
+  
+  color: $arrow;
+  padding-left: 23px;
+  margin-left: 20px;
+}
+
+.general__text {
+  font-size: 16px;
+  color: $info;
+  line-height: 25px;
+}
+
+.general__btn {
+  background-color: $btn;
+  padding: 9px 17px;
+  border-radius: 15px;
+  display: inline-block;
+  color: $btntext;
+  margin-right: 10px;
+}
+
+.general__heart {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 16px;
+    height: 14px;
+    left: 0;
+  }
+}
+
+.general__basket {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/basket.png);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 14px;
+    height: 14px;
+    color: $button;
+    left: 0;
+  }
+}
+
+.general__star {
+  display: flex;
+  justify-content: space-between;
+}
+
+.general__star-inner {
+  position: relative;
+  width: 15px;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 14px;
+  }
 }

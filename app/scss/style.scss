@@ -82,6 +82,7 @@
       border-radius: 22px;
       padding-left: 25px;
       padding-right: 70px;
+      outline: transparent;
     }
     &::placeholder {
       color: #898f96;
@@ -191,6 +192,7 @@
     padding-left: 28px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    outline: transparent;
   }
   &__menu {
     border: 1px solid $border;
@@ -285,6 +287,75 @@
     font-size: 16px;
     color: $info;
     line-height: 30px;
+  }
+}
+
+
+// resume
+
+
+.resume {
+  background-color: $bgGray;
+  padding: 120px 0 120px;
+ 
+  &__link{
+    background-color: $arrow;
+  }
+  &__box {
+    display: flex;
+    margin-top: 50px;
+  }
+  &__img {
+    width: 555px;
+    height: 450px;
+    background-color: #4e5760;
+  }
+  &__inner {
+    width: 585px;
+    background-color: #fff;
+    padding: 50px 50px 25px 50px;
+  }
+  &__page {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__block {
+    margin-top: 20px;
+  }
+  &__text {
+    margin-top: 34px;
+  }
+  &__btn {
+    margin-top: 40px;
+  }
+  &__prise {
+    padding: 10px 18px;
+    background-color: $button;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 54px;
+    &::before {
+      content: '';
+      position: absolute;
+      border-top: 1px solid $line;
+      width: 485px;
+      top: -19px;
+      left: 0;
+    }
+  }
+  &__heart {
+    margin: 0 20px;
+  }
+  &__star {
+    width: 87px;
+    margin-top: 65px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
