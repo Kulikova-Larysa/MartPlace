@@ -189,6 +189,8 @@
     border: 1px solid $border;
     height: 55px;
     padding-left: 28px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
   }
   &__menu {
     border: 1px solid $border;
@@ -199,6 +201,8 @@
     padding: 20px 70px 20px 20px;
     height: 55px;
     margin-right: 58px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     &:before {
       content: '';
       position: absolute;
@@ -209,7 +213,8 @@
     }
   }
   &__nav {
-    color: #555555;
+    color: $info;
+    font-size: 15px;
   }
   &__submit {
     padding: 18px 67px;
@@ -218,6 +223,72 @@
     color: #fff;
   }
 }
+
+
+// act
+
+.act {
+  margin-top: 180px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    text-align: center;
+    max-width: 291px;
+    &:hover {
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+      max-width: 360px;
+      padding: 0 35px;
+      transition: all .3s;
+    } 
+    &:before {
+      width: 112px;
+      height: 112px;
+      right: 0;
+      left: 0;
+      top: 30px;
+      margin: 0 auto;
+
+    }
+  }
+  .box-icons1 {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../images/icons1.jpg);
+    }
+  }  
+  .box-icons2 {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../images/icons2.jpg);
+    } 
+  }   
+  .box-icons3 {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../images/icons3.jpg);
+    } 
+  }
+  &__title {
+    font-size: 24px;
+    margin-bottom: 35px;
+    padding-top: 195px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $info;
+    line-height: 30px;
+  }
+}
+
+
 
 
 
